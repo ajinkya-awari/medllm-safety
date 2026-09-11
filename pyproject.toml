@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medllm-safety"
+version = "0.1.0"
+description = "Provider-free synthetic safety contracts for medical-language-model evaluation workflows"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+dependencies = []
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+]
+
+[project.optional-dependencies]
+test = ["pytest==9.0.3"]
+
+[tool.setuptools.packages.find]
+include = ["medllm_safety*", "project_preflight*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

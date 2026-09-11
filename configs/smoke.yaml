@@ -1,0 +1,23 @@
+mode: local_fixture_preflight
+seed: 17
+sample_limit: 2
+gates:
+  network: false
+  model_downloads: false
+  dataset_downloads: false
+  model_loading: false
+  benchmark_access: false
+  trust_remote_code: false
+  gpu: false
+  upload: false
+  deployment: false
+  publication: false
+  email: false
+models:
+  - requested_id: fixture-causal
+    actual_id: fixture-causal
+    revision_or_path: local-fixture
+    capability: causal_lm
+    license: synthetic-fixture
+    fallback_used: false
+evaluator: causal_choice

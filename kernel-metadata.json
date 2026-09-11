@@ -1,0 +1,13 @@
+{
+  "id": "ajinkya1225/11-medllm-safety-synthetic-validation",
+  "title": "Project 11 MedLLM Safety Synthetic Validation",
+  "code_file": "kaggle_medllm_safety.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_internet": false,
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": []
+}
