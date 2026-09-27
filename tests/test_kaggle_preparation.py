@@ -70,16 +70,16 @@ def test_canonical_kaggle_runbook_names_first_approval_gate_and_sequence():
     assert "stop at the approval gate" in text.lower()
 
 
-def test_kernel_metadata_matches_the_actual_private_cpu_notebook():
+def test_kernel_metadata_matches_the_actual_public_cpu_notebook():
     metadata = json.loads(METADATA_PATH.read_text(encoding="utf-8"))
 
     assert metadata == {
-        "id": "ajinkya1225/11-medllm-safety-synthetic-validation",
+        "id": "ajinkya1225/project-11-medllm-safety-synthetic-validation",
         "title": "Project 11 MedLLM Safety Synthetic Validation",
         "code_file": "kaggle_medllm_safety.ipynb",
         "language": "python",
         "kernel_type": "notebook",
-        "is_private": True,
+        "is_private": False,
         "enable_gpu": False,
         "enable_internet": False,
         "dataset_sources": [],
